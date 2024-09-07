@@ -49,6 +49,7 @@ from couchers.resources import get_badge_dict, get_static_badge_dict
 from couchers.servicers.api import user_model_to_pb
 from couchers.servicers.blocking import are_blocked
 from couchers.servicers.conversations import generate_message_notifications
+from couchers.servicers.discussions import generate_create_discussion_notifications
 from couchers.servicers.events import (
     generate_event_cancel_notifications,
     generate_event_create_notifications,
@@ -56,6 +57,7 @@ from couchers.servicers.events import (
     generate_event_update_notifications,
 )
 from couchers.servicers.requests import host_request_to_pb
+from couchers.servicers.threads import generate_reply_notifications
 from couchers.sql import couchers_select as select
 from couchers.tasks import enforce_community_memberships as tasks_enforce_community_memberships
 from couchers.utils import now
@@ -73,6 +75,10 @@ handle_email_digests.PAYLOAD = empty_pb2.Empty
 handle_email_digests.SCHEDULE = timedelta(minutes=15)
 
 generate_message_notifications.PAYLOAD = jobs_pb2.GenerateMessageNotificationsPayload
+
+generate_reply_notifications.PAYLOAD = jobs_pb2.GenerateReplyNotificationsPayload
+
+generate_create_discussion_notifications.PAYLOAD = jobs_pb2.GenerateCreateDiscussionNotificationsPayload
 
 generate_event_create_notifications.PAYLOAD = jobs_pb2.GenerateEventCreateNotificationsPayload
 
