@@ -5,6 +5,7 @@ import {
   TextField,
   Typography,
 } from "@material-ui/core";
+import { Alert as MuiAlert } from "@material-ui/lab/";
 import Alert from "components/Alert";
 import Button from "components/Button";
 import CircularProgress from "components/CircularProgress";
@@ -287,7 +288,7 @@ export default function EditProfileForm() {
               render={({ onChange, value }) => {
                 const other =
                   value === t("profile:pronouns.woman") ||
-                  value === t("profile:pronouns.man")
+                    value === t("profile:pronouns.man")
                     ? ""
                     : value;
                 return (
@@ -377,7 +378,9 @@ export default function EditProfileForm() {
               defaultValue={user.aboutMe || DEFAULT_ABOUT_ME_HEADINGS}
               control={control}
               className={classes.field}
-            />
+            >
+              <MuiAlert severity="warning" className={classes.completenessAlert}>You need at least <b>124</b> more characters in this section for a complete profile and to be able to fully use the platform!</MuiAlert>
+            </ProfileMarkdownInput>
             <ProfileMarkdownInput
               id="thingsILike"
               label={t("profile:heading.hobbies_section")}

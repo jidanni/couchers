@@ -52,6 +52,10 @@ const useStyles = makeStyles((theme) => ({
   alert: {
     marginBottom: theme.spacing(3),
   },
+  completenessAlert: {
+    marginBottom: theme.spacing(1),
+    marginTop: theme.spacing(1),
+  },
   field: {
     [theme.breakpoints.up("md")]: {
       "& > .MuiInputBase-root": {
