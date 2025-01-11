@@ -30,8 +30,6 @@ const customJestConfig: Config = {
     // Handle module aliases
     "^@/components/(.*)$": "<rootDir>/components/$1",
 
-    // Handle @next/font
-    "@next/font/(.*)": `<rootDir>/__mocks__/nextFontMock.js`,
     // Handle next/font
     "next/font/(.*)": `<rootDir>/__mocks__/nextFontMock.js`,
     // Disable server-only
