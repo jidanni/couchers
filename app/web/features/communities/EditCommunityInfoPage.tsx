@@ -9,7 +9,7 @@ import Redirect from "components/Redirect";
 import Snackbar from "components/Snackbar";
 import { communityKey } from "features/queryKeys";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES, GLOBAL } from "i18n/namespaces";
 import { Community } from "proto/communities_pb";
 import { Page } from "proto/pages_pb";

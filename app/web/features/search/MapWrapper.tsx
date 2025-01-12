@@ -10,7 +10,7 @@ import {
   reRenderUsersOnMap,
 } from "features/search/users";
 import { Point } from "geojson";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { SEARCH } from "i18n/namespaces";
 import {
   LngLat,

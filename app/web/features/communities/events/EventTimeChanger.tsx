@@ -1,7 +1,7 @@
 import Datepicker from "components/Datepicker";
 import TextField from "components/TextField";
 import { Timestamp } from "google-protobuf/google/protobuf/timestamp_pb";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import { Event } from "proto/events_pb";
 import { UseFormReturn } from "react-hook-form";

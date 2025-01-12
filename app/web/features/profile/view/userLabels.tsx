@@ -4,7 +4,7 @@ import { CheckCircleIcon, ErrorIcon } from "components/Icons";
 import LabelAndText from "components/LabelAndText";
 import { useLanguages } from "features/profile/hooks/useLanguages";
 import { responseRateKey } from "features/queryKeys";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES, GLOBAL, PROFILE } from "i18n/namespaces";
 import {
   BirthdateVerificationStatus,

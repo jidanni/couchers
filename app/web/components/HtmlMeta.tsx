@@ -1,4 +1,4 @@
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL } from "i18n/namespaces";
 import Head from "next/head";
 

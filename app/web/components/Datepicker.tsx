@@ -1,6 +1,6 @@
 import TextField from "@mui/material/TextField";
 import { DatePicker, PickersDay } from "@mui/x-date-pickers";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { Control, Controller, UseControllerProps } from "react-hook-form";
 import { theme } from "theme";
 import dayjs, { Dayjs } from "utils/dayjs";

@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import HtmlMeta from "components/HtmlMeta";
 import EditCommunityPage from "features/communities/EditCommunityInfoPage";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import { CommunityTab } from "routes";
 import makeStyles from "utils/makeStyles";

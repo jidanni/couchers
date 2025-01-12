@@ -9,7 +9,7 @@ import {
 import { eventImagePlaceholderUrl } from "appConstants";
 import classNames from "classnames";
 import Divider from "components/Divider";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import Link from "next/link";
 import { Event } from "proto/events_pb";

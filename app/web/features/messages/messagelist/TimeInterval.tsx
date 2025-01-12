@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import makeStyles from "@mui/styles/makeStyles";
 import classNames from "classnames";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL } from "i18n/namespaces";
 import React from "react";
 import { timeAgoI18n } from "utils/timeAgo";

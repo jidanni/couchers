@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import Button from "components/Button";
 import { CommunityLeadersIcon } from "components/Icons";
 import UsersList from "components/UsersList";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import { Community } from "proto/communities_pb";
 import { useState } from "react";

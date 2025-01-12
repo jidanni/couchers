@@ -1,7 +1,7 @@
 import { InfoIcon } from "components/Icons";
 import Markdown from "components/Markdown";
 import StyledLink from "components/StyledLink";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES, GLOBAL } from "i18n/namespaces";
 import { Community } from "proto/communities_pb";
 import { routeToEditCommunityPage } from "routes";

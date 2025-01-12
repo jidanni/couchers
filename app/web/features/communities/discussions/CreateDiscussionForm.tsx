@@ -3,7 +3,7 @@ import Alert from "components/Alert";
 import Button from "components/Button";
 import MarkdownInput from "components/MarkdownInput";
 import TextField from "components/TextField";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES, GLOBAL } from "i18n/namespaces";
 import { useForm } from "react-hook-form";
 import makeStyles from "utils/makeStyles";

@@ -2,7 +2,7 @@ import { Collapse, useMediaQuery, useTheme } from "@mui/material";
 import makeStyles from "@mui/styles/makeStyles";
 import HtmlMeta from "components/HtmlMeta";
 import { Coordinates } from "features/search/constants";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, SEARCH } from "i18n/namespaces";
 import { LngLat, Map as MaplibreMap } from "maplibre-gl";
 import { HostingStatus, User } from "proto/api_pb";

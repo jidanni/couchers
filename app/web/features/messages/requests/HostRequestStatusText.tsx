@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { MESSAGES } from "i18n/namespaces";
 import { HostRequestStatus } from "proto/conversations_pb";
 

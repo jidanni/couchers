@@ -2,7 +2,7 @@ import { Card, CardContent, Skeleton, Typography } from "@mui/material";
 import classNames from "classnames";
 import Avatar from "components/Avatar";
 import { useLiteUser } from "features/userQueries/useLiteUsers";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import Link from "next/link";
 import { Discussion } from "proto/discussions_pb";

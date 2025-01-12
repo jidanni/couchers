@@ -9,7 +9,7 @@ import { ChangePassword } from "features/auth/password";
 import Section from "features/auth/section/Section";
 import Timezone from "features/auth/timezone/Timezone";
 import Username from "features/auth/username/Username";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { AUTH } from "i18n/namespaces";
 import makeStyles from "utils/makeStyles";
 

@@ -1,7 +1,7 @@
 import Button from "components/Button";
 import ProfileIncompleteDialog from "components/ProfileIncompleteDialog/ProfileIncompleteDialog";
 import useAccountInfo from "features/auth/useAccountInfo";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { PROFILE } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import { User } from "proto/api_pb";

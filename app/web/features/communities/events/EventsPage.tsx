@@ -1,6 +1,6 @@
 import { Button, Typography } from "@mui/material";
 import PageTitle from "components/PageTitle";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES, GLOBAL } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import { newEventRoute } from "routes";

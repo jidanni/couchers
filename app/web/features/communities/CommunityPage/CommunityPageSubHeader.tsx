@@ -3,7 +3,7 @@ import { Breadcrumbs, Typography } from "@mui/material";
 import makeStyles from "@mui/styles/makeStyles";
 import StyledLink from "components/StyledLink";
 import TabBar from "components/TabBar";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import { Community } from "proto/communities_pb";

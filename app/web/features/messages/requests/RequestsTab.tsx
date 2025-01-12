@@ -7,7 +7,7 @@ import HostRequestListItem from "features/messages/requests/HostRequestListItem"
 import useMessageListStyles from "features/messages/useMessageListStyles";
 import { hostRequestsListKey } from "features/queryKeys";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { MESSAGES } from "i18n/namespaces";
 import Link from "next/link";
 import { GroupChat } from "proto/conversations_pb";

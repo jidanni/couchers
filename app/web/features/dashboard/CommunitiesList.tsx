@@ -5,7 +5,7 @@ import Button from "components/Button";
 import StyledLink from "components/StyledLink";
 import { useListSubCommunities } from "features/communities/hooks";
 import useUserCommunities from "features/userQueries/useUserCommunities";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { DASHBOARD } from "i18n/namespaces";
 import React from "react";
 import { routeToCommunity } from "routes";

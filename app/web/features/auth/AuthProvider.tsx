@@ -1,10 +1,10 @@
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { AUTH } from "i18n/namespaces";
+import { useRouter } from "next/navigation";
 import React, { Context, ReactNode, useContext, useEffect } from "react";
 import { jailRoute, loginRoute } from "routes";
 import { setUnauthenticatedErrorHandler } from "service/client";
-import useStablePush from "utils/useStablePush";
 
 import { JAILED_ERROR_MESSAGE } from "./constants";
 import useAuthStore, { AuthStoreType } from "./useAuthStore";
@@ -22,27 +22,26 @@ function useAppContext<T>(context: Context<T | null>) {
 export default function AuthProvider({ children }: { children: ReactNode }) {
   const { t } = useTranslation(AUTH);
   const store = useAuthStore();
-
-  const push = useStablePush();
+  const router = useRouter();
 
   useEffect(() => {
     setUnauthenticatedErrorHandler(async (e: RpcError) => {
       // the backend will return "Permission denied" if you're just jailed, and "Unauthorized" otherwise
       if (e.message === JAILED_ERROR_MESSAGE) {
         await store.authActions.updateJailStatus();
-        push(jailRoute);
+        router.push(jailRoute);
       } else {
         // completely logged out
         await store.authActions.logout();
         store.authActions.authError(t("logged_out_message"));
-        push(loginRoute);
+        router.push(loginRoute);
       }
     });
 
     return () => {
       setUnauthenticatedErrorHandler(async () => {});
     };
-  }, [store.authActions, push, t]);
+  }, [store.authActions, t, router]);
 
   return <AuthContext.Provider value={store}>{children}</AuthContext.Provider>;
 }

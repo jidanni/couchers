@@ -1,6 +1,6 @@
 import { Pagination } from "@mui/material";
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import mockEvents from "test/fixtures/events.json";
 import wrapper from "test/hookWrapper";
 

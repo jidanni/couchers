@@ -16,7 +16,7 @@ import {
   messageTargetId,
 } from "features/messages/utils";
 import { useLiteUsers } from "features/userQueries/useLiteUsers";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { MESSAGES } from "i18n/namespaces";
 import { GroupChat } from "proto/conversations_pb";
 import React from "react";

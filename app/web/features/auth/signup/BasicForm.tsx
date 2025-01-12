@@ -5,7 +5,7 @@ import TextField from "components/TextField";
 import { useAuthContext } from "features/auth/AuthProvider";
 import useAuthStyles from "features/auth/useAuthStyles";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { AUTH, GLOBAL } from "i18n/namespaces";
 import { useRef } from "react";
 import { useForm } from "react-hook-form";

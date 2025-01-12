@@ -3,7 +3,7 @@ import Alert from "components/Alert";
 import CenteredSpinner from "components/CenteredSpinner/CenteredSpinner";
 import LocationAutocomplete from "components/LocationAutocomplete";
 import TextBody from "components/TextBody";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES, GLOBAL } from "i18n/namespaces";
 import { useState } from "react";
 import { useForm } from "react-hook-form";

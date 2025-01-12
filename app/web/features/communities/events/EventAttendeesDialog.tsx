@@ -6,7 +6,7 @@ import {
   DialogTitle,
 } from "components/Dialog";
 import UsersList from "components/UsersList";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 
 import { useEventAttendees } from "./hooks";

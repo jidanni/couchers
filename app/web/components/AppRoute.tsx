@@ -1,3 +1,5 @@
+"use client";
+
 import { Container } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import CenteredSpinner from "components/CenteredSpinner/CenteredSpinner";
@@ -5,7 +7,7 @@ import CookieBanner from "components/CookieBanner";
 import ErrorBoundary from "components/ErrorBoundary";
 import Footer from "components/Footer";
 import { useAuthContext } from "features/auth/AuthProvider";
-import { useRouter } from "next/router";
+import { usePathname, useRouter } from "next/navigation";
 import { useIsNativeEmbed } from "platform/nativeLink";
 import { ReactNode, useEffect, useState } from "react";
 import { jailRoute, loginRoute } from "routes";
@@ -48,6 +50,8 @@ export default function AppRoute({
   variant = "standard",
 }: AppRouteProps) {
   const router = useRouter();
+  const pathname = usePathname();
+
   const { authState, authActions } = useAuthContext();
   const isAuthenticated = authState.authenticated;
   const isJailed = authState.jailed;
@@ -62,12 +66,15 @@ export default function AppRoute({
   useEffect(() => {
     if (!isAuthenticated && isPrivate) {
       authActions.authError("Please log in.");
-      router.push({ pathname: loginRoute, query: { from: location.pathname } });
+
+      router.push(
+        `${loginRoute}?from=${encodeURIComponent(location.pathname)}`
+      );
     }
-    if (isAuthenticated && isJailed && router.pathname !== jailRoute) {
+    if (isAuthenticated && isJailed && pathname !== jailRoute) {
       router.push(jailRoute);
     }
-  }, [isAuthenticated, isJailed, isPrivate, authActions, router]);
+  }, [isAuthenticated, isJailed, isPrivate, authActions, router, pathname]);
 
   const containerSx = {
     ...(variant !== "full-screen" && { height: "100%" }),

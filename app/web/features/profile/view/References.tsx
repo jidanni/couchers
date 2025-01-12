@@ -6,7 +6,7 @@ import { MenuItem } from "components/Menu";
 import { referencesFilterLabels } from "features/profile/constants";
 import { useListAvailableReferences } from "features/profile/hooks/referencesHooks";
 import { useProfileUser } from "features/profile/hooks/useProfileUser";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, PROFILE } from "i18n/namespaces";
 import Link from "next/link";
 import { User } from "proto/api_pb";

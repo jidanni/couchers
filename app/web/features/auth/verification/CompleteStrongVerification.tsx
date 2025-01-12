@@ -1,7 +1,7 @@
 import { Container, Typography } from "@mui/material";
 import HtmlMeta from "components/HtmlMeta";
 import PageTitle from "components/PageTitle";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { AUTH } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import stringOrFirstString from "utils/stringOrFirstString";

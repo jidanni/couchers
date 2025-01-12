@@ -4,7 +4,7 @@ import HtmlMeta from "components/HtmlMeta";
 import { ProfileUserProvider } from "features/profile/hooks/useProfileUser";
 import Overview from "features/profile/view/Overview";
 import useCurrentUser from "features/userQueries/useCurrentUser";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, PROFILE } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import { routeToProfile, UserTab } from "routes";

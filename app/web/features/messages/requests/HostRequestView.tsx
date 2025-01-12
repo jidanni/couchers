@@ -16,7 +16,7 @@ import {
 import { useLiteUser } from "features/userQueries/useLiteUsers";
 import { Empty } from "google-protobuf/google/protobuf/empty_pb";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { MESSAGES } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import {

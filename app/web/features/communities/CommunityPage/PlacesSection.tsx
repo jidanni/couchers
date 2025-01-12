@@ -4,7 +4,7 @@ import HorizontalScroller from "components/HorizontalScroller";
 import { LocationIcon } from "components/Icons";
 import TextBody from "components/TextBody";
 import { useListPlaces } from "features/communities/hooks";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import { Community } from "proto/communities_pb";
 import React from "react";

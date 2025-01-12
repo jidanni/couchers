@@ -1,7 +1,7 @@
 import IconButton from "components/IconButton";
 import { SettingsIcon } from "components/Icons";
 import useAccountInfo from "features/auth/useAccountInfo";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { PROFILE } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import React from "react";

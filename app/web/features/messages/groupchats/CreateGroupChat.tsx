@@ -16,7 +16,7 @@ import useFriendList from "features/connections/friends/useFriendList";
 import { groupChatsListKey } from "features/queryKeys";
 import useUserByUsername from "features/userQueries/useUserByUsername";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, MESSAGES } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import { User } from "proto/api_pb";

@@ -16,7 +16,7 @@ import {
   DONATIONSBOX_VALUES,
 } from "features/donations/constants";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { DONATIONS } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import { useMemo, useRef, useState } from "react";

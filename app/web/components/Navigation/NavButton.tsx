@@ -2,7 +2,7 @@ import { Typography, TypographyProps } from "@mui/material";
 import classNames from "classnames";
 import NotificationBadge from "components/NotificationBadge";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import { baseRoute } from "routes";
 
 import { useNavLinkStyles } from "./useNavLinkStyles";
@@ -21,11 +21,9 @@ export default function NavButton({
   notificationCount,
 }: NavButtonProps) {
   const classes = useNavLinkStyles();
-  const router = useRouter();
+  const pathname = usePathname() || "";
   const isActive =
-    route === baseRoute
-      ? router.asPath === route
-      : router.asPath.includes(route);
+    route === baseRoute ? pathname === route : pathname.includes(route);
 
   return (
     <Link

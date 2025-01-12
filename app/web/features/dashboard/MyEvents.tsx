@@ -9,7 +9,7 @@ import { useCommunityPageStyles } from "features/communities/CommunityPage";
 import EventCard from "features/communities/events/EventCard";
 import { myEventsKey } from "features/queryKeys";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES, DASHBOARD } from "i18n/namespaces";
 import { ListMyEventsRes } from "proto/events_pb";
 import { useInfiniteQuery } from "react-query";

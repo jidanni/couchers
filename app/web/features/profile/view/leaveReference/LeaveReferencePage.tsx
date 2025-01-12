@@ -6,7 +6,7 @@ import { ProfileUserProvider } from "features/profile/hooks/useProfileUser";
 import ReferenceForm from "features/profile/view/leaveReference/ReferenceForm";
 import UserOverview from "features/profile/view/UserOverview";
 import { useUser } from "features/userQueries/useUsers";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, PROFILE } from "i18n/namespaces";
 import { User } from "proto/api_pb";
 import { ReferenceType } from "proto/references_pb";

@@ -5,7 +5,7 @@ import Button from "components/Button";
 import CenteredSpinner from "components/CenteredSpinner/CenteredSpinner";
 import CustomColorSwitch from "components/CustomColorSwitch";
 import TextBody from "components/TextBody";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import { useState } from "react";

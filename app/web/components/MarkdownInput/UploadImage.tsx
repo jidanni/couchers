@@ -8,7 +8,7 @@ import {
 } from "components/Dialog";
 import ImageInput from "components/ImageInput";
 import TextField from "components/TextField";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL } from "i18n/namespaces";
 import React, { useRef } from "react";
 import { useForm } from "react-hook-form";

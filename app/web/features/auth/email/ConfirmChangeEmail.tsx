@@ -3,7 +3,7 @@ import Alert from "components/Alert";
 import StyledLink from "components/StyledLink";
 import { Empty } from "google-protobuf/google/protobuf/empty_pb";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { AUTH } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import { useEffect } from "react";

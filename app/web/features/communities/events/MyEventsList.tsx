@@ -3,7 +3,7 @@ import Alert from "components/Alert";
 import CenteredSpinner from "components/CenteredSpinner/CenteredSpinner";
 import TextBody from "components/TextBody";
 import { EventsType } from "features/queryKeys";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import { useState } from "react";
 import makeStyles from "utils/makeStyles";

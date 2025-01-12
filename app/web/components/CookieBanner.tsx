@@ -3,7 +3,7 @@ import IconButton from "components/IconButton";
 import { CloseIcon } from "components/Icons";
 import StyledLink from "components/StyledLink";
 import { useAuthContext } from "features/auth/AuthProvider";
-import { Trans, useTranslation } from "i18n";
+import { Trans, useTranslation } from "react-i18next";
 import { usePersistedState } from "platform/usePersistedState";
 import { tosRoute } from "routes";
 import { useIsMounted } from "utils/hooks";

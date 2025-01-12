@@ -19,7 +19,7 @@ import Snackbar from "components/Snackbar";
 import TextField from "components/TextField";
 import { Empty } from "google-protobuf/google/protobuf/empty_pb";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL } from "i18n/namespaces";
 import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";

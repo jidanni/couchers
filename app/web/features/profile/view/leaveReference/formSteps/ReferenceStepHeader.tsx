@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import HeaderButton from "components/HeaderButton";
 import { BackIcon } from "components/Icons";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, PROFILE } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import { ReferenceType } from "proto/references_pb";

@@ -9,7 +9,7 @@ import { useAuthContext } from "features/auth/AuthProvider";
 import CommunityGuidelinesSection from "features/auth/jail/CommunityGuidelinesSection";
 import LocationSection from "features/auth/jail/LocationSection";
 import TOSSection from "features/auth/jail/TOSSection";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { AUTH } from "i18n/namespaces";
 import { JailInfoRes } from "proto/jail_pb";
 import React, { useEffect, useState } from "react";

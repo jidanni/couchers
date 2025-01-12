@@ -19,7 +19,7 @@ import {
 } from "features/messages/utils";
 import useCurrentUser from "features/userQueries/useCurrentUser";
 import { useLiteUser } from "features/userQueries/useLiteUsers";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { MESSAGES } from "i18n/namespaces";
 import { HostRequest } from "proto/requests_pb";
 import dayjs from "utils/dayjs";

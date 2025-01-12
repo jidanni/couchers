@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import Button from "components/Button";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { AUTH } from "i18n/namespaces";
 import Link from "next/link";
 import { loginsSettingsRoute } from "routes";

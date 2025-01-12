@@ -1,5 +1,5 @@
 import Alert from "components/Alert";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { AUTH } from "i18n/namespaces";
 import makeStyles from "utils/makeStyles";
 

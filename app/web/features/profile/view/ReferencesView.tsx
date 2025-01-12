@@ -4,7 +4,7 @@ import CenteredSpinner from "components/CenteredSpinner/CenteredSpinner";
 import TextBody from "components/TextBody";
 import { useLiteUsers } from "features/userQueries/useLiteUsers";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, PROFILE } from "i18n/namespaces";
 import { ListReferencesRes } from "proto/references_pb";
 import { UseInfiniteQueryResult } from "react-query";

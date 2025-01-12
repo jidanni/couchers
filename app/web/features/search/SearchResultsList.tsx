@@ -6,7 +6,7 @@ import HorizontalScroller from "components/HorizontalScroller";
 import TextBody from "components/TextBody";
 import SearchResult from "features/search/SearchResult";
 import { useUser } from "features/userQueries/useUsers";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { SEARCH } from "i18n/namespaces";
 import { User } from "proto/api_pb";
 import { UserSearchRes } from "proto/search_pb";

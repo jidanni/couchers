@@ -12,7 +12,7 @@ import {
   ReferencesLastActiveLabels,
 } from "features/profile/view/userLabels";
 import { aboutText } from "features/search/constants";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, SEARCH } from "i18n/namespaces";
 import { User } from "proto/api_pb";
 import LinesEllipsis from "react-lines-ellipsis";

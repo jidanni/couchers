@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Button as MuiButton,
   Container,
@@ -15,11 +17,11 @@ import StyledLink from "components/StyledLink";
 import { useAuthContext } from "features/auth/AuthProvider";
 import BasicForm from "features/auth/signup/BasicForm";
 import useAuthStyles from "features/auth/useAuthStyles";
-import { AUTH, GLOBAL, LANDING } from "i18n/namespaces";
+import { AUTH, GLOBAL, LANDING } from 'i18n/namespaces'
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { Trans, useTranslation } from "next-i18next";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { Trans, useTranslation } from "react-i18next";
 import { useQueryClient } from "react-query";
 import vercelLogo from "resources/vercel.svg";
 import makeStyles from "utils/makeStyles";

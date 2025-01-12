@@ -15,7 +15,7 @@ import {
 } from "components/Dialog";
 import { groupChatKey, groupChatsListKey } from "features/queryKeys";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, MESSAGES } from "i18n/namespaces";
 import React, { useState } from "react";
 import { useMutation, useQueryClient } from "react-query";

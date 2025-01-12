@@ -8,7 +8,7 @@ import {
 import { COPYRIGHT, NON_PROFIT } from "components/Footer/constants";
 import { GithubIcon } from "components/Icons";
 import StyledLink from "components/StyledLink";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL } from "i18n/namespaces";
 import Link from "next/link";
 import { ReactNode } from "react";

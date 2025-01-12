@@ -4,7 +4,7 @@ import Appropriate from "features/profile/view/leaveReference/formSteps/Appropri
 import Rating from "features/profile/view/leaveReference/formSteps/Rating";
 import SubmitReference from "features/profile/view/leaveReference/formSteps/submit/SubmitReference";
 import Text from "features/profile/view/leaveReference/formSteps/Text";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, PROFILE } from "i18n/namespaces";
 import { useState } from "react";
 import { leaveReferenceBaseRoute, ReferenceStep } from "routes";

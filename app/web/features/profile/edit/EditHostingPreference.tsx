@@ -18,7 +18,7 @@ import useUpdateHostingPreferences from "features/profile/hooks/useUpdateHosting
 import ProfileMarkdownInput from "features/profile/ProfileMarkdownInput";
 import ProfileTextInput from "features/profile/ProfileTextInput";
 import useCurrentUser from "features/userQueries/useCurrentUser";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, PROFILE } from "i18n/namespaces";
 import {
   ParkingDetails,

@@ -5,7 +5,7 @@ import Button from "components/Button";
 import MarkdownInput, { MarkdownInputProps } from "components/MarkdownInput";
 import { threadKey } from "features/queryKeys";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES, GLOBAL } from "i18n/namespaces";
 import { PostReplyRes } from "proto/threads_pb";
 import React, { useRef } from "react";

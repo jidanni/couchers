@@ -5,7 +5,7 @@ import HtmlMeta from "components/HtmlMeta";
 import NotFoundPage from "features/NotFoundPage";
 import { communityEventsBaseKey, eventKey } from "features/queryKeys";
 import type { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES, GLOBAL } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import { Event } from "proto/events_pb";

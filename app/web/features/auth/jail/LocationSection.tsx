@@ -5,7 +5,7 @@ import EditLocationMap, {
   ApproximateLocation,
 } from "components/EditLocationMap";
 import TextBody from "components/TextBody";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { AUTH, GLOBAL } from "i18n/namespaces";
 import Sentry from "platform/sentry";
 import React, { useState } from "react";

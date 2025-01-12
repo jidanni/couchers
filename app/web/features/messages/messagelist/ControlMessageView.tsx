@@ -3,7 +3,7 @@ import makeStyles from "@mui/styles/makeStyles";
 import classNames from "classnames";
 import TextBody from "components/TextBody";
 import { useLiteUser } from "features/userQueries/useLiteUsers";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { MESSAGES } from "i18n/namespaces";
 import React from "react";
 

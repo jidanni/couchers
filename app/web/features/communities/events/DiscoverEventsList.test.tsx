@@ -1,6 +1,6 @@
 import { Pagination } from "@mui/material";
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { LngLat } from "maplibre-gl";
 import React from "react";
 import { useController, useForm } from "react-hook-form";

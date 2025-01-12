@@ -1,4 +1,4 @@
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import React, { ReactElement, useState } from "react";
 
 import Button from "./Button";

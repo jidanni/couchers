@@ -19,7 +19,7 @@ import {
   useReferenceStyles,
 } from "features/profile/view/leaveReference/ReferenceForm";
 import { useLiteUser } from "features/userQueries/useLiteUsers";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, PROFILE } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import { ReferenceType } from "proto/references_pb";

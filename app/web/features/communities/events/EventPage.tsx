@@ -19,7 +19,7 @@ import NotFoundPage from "features/NotFoundPage";
 import { eventAttendeesBaseKey, eventKey } from "features/queryKeys";
 import { Timestamp } from "google-protobuf/google/protobuf/timestamp_pb";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import Link from "next/link";
 import { useRouter } from "next/router";

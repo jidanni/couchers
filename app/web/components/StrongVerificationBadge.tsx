@@ -1,6 +1,6 @@
 import { VerifiedUser } from "@mui/icons-material";
 import { styled, Tooltip } from "@mui/material";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL } from "i18n/namespaces";
 import React from "react";
 

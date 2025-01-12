@@ -1,6 +1,6 @@
 import { Coordinates } from "features/search/constants";
 import { LngLat } from "maplibre-gl";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Sentry from "platform/sentry";
 import {
   Dispatch,
@@ -166,27 +166,42 @@ function useUnsavedChangesWarning({
   warningMessage: string;
 }) {
   const router = useRouter();
-  // https://github.com/vercel/next.js/issues/2694#issuecomment-732990201
+
   useEffect(() => {
     const handleWindowClose = (e: BeforeUnloadEvent) => {
       if (!isDirty) return;
       e.preventDefault();
-      e.returnValue = warningMessage;
-      return;
+      // This will trigger a confirmation dialog in most browsers
+      e.preventDefault();
     };
-    const handleBrowseAway = () => {
+
+    const handleBrowseAway = (url: string) => {
       if (!isDirty || isSubmitted) return;
-      if (window.confirm(warningMessage)) return;
-      router.events.emit("routeChangeError");
-      throw Error("Cancelled due to unsaved changes");
+      if (window.confirm(warningMessage)) {
+        // Proceed with navigation
+        router.push(url);
+      } else {
+        // Prevent navigation
+        throw new Error("Cancelled due to unsaved changes");
+      }
     };
+
+    // Listen for the `beforeunload` event for browser tab close/refresh
     window.addEventListener("beforeunload", handleWindowClose);
-    router.events.on("routeChangeStart", handleBrowseAway);
+
+    // Intercept navigation with manual confirmation
+    const originalPush = router.push;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    router.push = (url: string, ...args: any) => {
+      handleBrowseAway(url);
+      return originalPush(url, ...args);
+    };
+
     return () => {
       window.removeEventListener("beforeunload", handleWindowClose);
-      router.events.off("routeChangeStart", handleBrowseAway);
+      router.push = originalPush; // Restore original push method
     };
-  }, [isDirty, router.events, isSubmitted, warningMessage]);
+  }, [isDirty, isSubmitted, warningMessage, router]);
 }
 
 export {

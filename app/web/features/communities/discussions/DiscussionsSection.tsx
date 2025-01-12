@@ -5,7 +5,7 @@ import CenteredSpinner from "components/CenteredSpinner/CenteredSpinner";
 import { EmailIcon } from "components/Icons";
 import TextBody from "components/TextBody";
 import { useListDiscussions } from "features/communities/hooks";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import Link from "next/link";
 import { Community } from "proto/communities_pb";

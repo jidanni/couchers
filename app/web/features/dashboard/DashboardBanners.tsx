@@ -3,7 +3,7 @@ import Alert from "components/Alert";
 import Button from "components/Button";
 import { accountInfoQueryKey } from "features/queryKeys";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { DASHBOARD } from "i18n/namespaces";
 import Link from "next/link";
 import { GetAccountInfoRes } from "proto/account_pb";

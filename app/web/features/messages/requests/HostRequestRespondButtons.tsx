@@ -1,5 +1,5 @@
 import ConfirmationDialogWrapper from "components/ConfirmationDialogWrapper";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, MESSAGES } from "i18n/namespaces";
 import { HostRequestStatus } from "proto/conversations_pb";
 import React from "react";

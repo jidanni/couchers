@@ -2,7 +2,7 @@ import Button from "components/Button";
 import Snackbar from "components/Snackbar";
 import { communityKey } from "features/queryKeys";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import { Community } from "proto/communities_pb";
 import { useMutation, useQueryClient } from "react-query";

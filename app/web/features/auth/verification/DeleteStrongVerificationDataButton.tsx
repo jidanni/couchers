@@ -10,7 +10,7 @@ import {
 import Snackbar from "components/Snackbar";
 import { accountInfoQueryKey } from "features/queryKeys";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { AUTH, GLOBAL } from "i18n/namespaces";
 import { useState } from "react";
 import { useMutation, useQueryClient } from "react-query";

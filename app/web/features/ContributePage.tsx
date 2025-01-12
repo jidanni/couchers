@@ -3,7 +3,7 @@ import { JOIN_THE_TEAM } from "components/ContributorForm";
 import StandaloneContributorForm from "components/ContributorForm/StandaloneContributorForm";
 import HtmlMeta from "components/HtmlMeta";
 import PageTitle from "components/PageTitle";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL } from "i18n/namespaces";
 
 export default function ContributePage() {

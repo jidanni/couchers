@@ -4,7 +4,7 @@ import NotificationBadge from "components/NotificationBadge";
 import PageTitle from "components/PageTitle";
 import TabBar from "components/TabBar";
 import MarkAllReadButton from "features/messages/requests/MarkAllReadButton";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { MESSAGES } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import { ReactNode } from "react";

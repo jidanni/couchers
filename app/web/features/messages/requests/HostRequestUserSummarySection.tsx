@@ -7,7 +7,7 @@ import {
 } from "@mui/material";
 import Avatar from "components/Avatar";
 import UserSummary from "components/UserSummary";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { MESSAGES } from "i18n/namespaces";
 import { LiteUser } from "proto/api_pb";
 import { HostRequest } from "proto/requests_pb";

@@ -9,7 +9,7 @@ import {
   hostingStatusLabels,
   meetupStatusLabels,
 } from "features/profile/constants";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, PROFILE } from "i18n/namespaces";
 import { HostingStatus, MeetupStatus } from "proto/api_pb";
 import React from "react";

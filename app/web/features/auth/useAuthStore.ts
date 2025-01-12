@@ -1,5 +1,5 @@
 import { userKey } from "features/queryKeys";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL } from "i18n/namespaces";
 import Sentry from "platform/sentry";
 import { clearStorage, usePersistedState } from "platform/usePersistedState";

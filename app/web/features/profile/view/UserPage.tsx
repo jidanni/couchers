@@ -7,7 +7,7 @@ import { ProfileUserProvider } from "features/profile/hooks/useProfileUser";
 import NewHostRequest from "features/profile/view/NewHostRequest";
 import Overview from "features/profile/view/Overview";
 import useUserByUsername from "features/userQueries/useUserByUsername";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { PROFILE } from "i18n/namespaces";
 import { useRouter } from "next/router";
 import { useLayoutEffect, useState } from "react";

@@ -8,7 +8,7 @@ import GroupChatListItem from "features/messages/groupchats/GroupChatListItem";
 import useMessageListStyles from "features/messages/useMessageListStyles";
 import { groupChatsListKey } from "features/queryKeys";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { MESSAGES } from "i18n/namespaces";
 import Link from "next/link";
 import { ListGroupChatsRes } from "proto/conversations_pb";

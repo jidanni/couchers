@@ -8,7 +8,7 @@ import PageTitle from "components/PageTitle";
 import TextField from "components/TextField";
 import { Coordinates } from "features/search/constants";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES, GLOBAL } from "i18n/namespaces";
 import { LngLat } from "maplibre-gl";
 import { Event } from "proto/events_pb";

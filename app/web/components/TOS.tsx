@@ -4,7 +4,7 @@ import Markdown from "components/Markdown";
 import PageTitle from "components/PageTitle";
 import { tosQueryKey } from "features/queryKeys";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL } from "i18n/namespaces";
 import { GetTermsOfServiceRes } from "proto/resources_pb";
 import { useQuery } from "react-query";

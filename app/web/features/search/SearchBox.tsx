@@ -10,7 +10,7 @@ import {
 import { CrossIcon } from "components/Icons";
 import LocationAutocomplete from "components/LocationAutocomplete";
 import TextField from "components/TextField";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, SEARCH } from "i18n/namespaces";
 import { LngLat } from "maplibre-gl";
 import { Dispatch, SetStateAction } from "react";

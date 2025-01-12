@@ -3,7 +3,7 @@ import makeStyles from "@mui/styles/makeStyles";
 import Button from "components/Button";
 import { CheckIcon, ExpandLessIcon, ExpandMoreIcon } from "components/Icons";
 import Menu, { MenuItem } from "components/Menu";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import { AttendanceState } from "proto/events_pb";
 import { useState } from "react";

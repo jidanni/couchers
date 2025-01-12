@@ -2,7 +2,7 @@ import { Card, Typography } from "@mui/material";
 import Button from "components/Button";
 import UsersList from "components/UsersList";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { COMMUNITIES } from "i18n/namespaces";
 import makeStyles from "utils/makeStyles";
 

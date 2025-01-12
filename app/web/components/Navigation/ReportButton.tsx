@@ -20,7 +20,7 @@ import Snackbar from "components/Snackbar";
 import StyledLink from "components/StyledLink";
 import TextField from "components/TextField";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { ReportBugRes } from "proto/bugs_pb";
 import { useState } from "react";
 import { useForm } from "react-hook-form";

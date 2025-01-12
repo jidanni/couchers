@@ -1,7 +1,7 @@
 import { Typography, useTheme } from "@mui/material";
 import Divider from "components/Divider";
 import Markdown from "components/Markdown";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, PROFILE } from "i18n/namespaces";
 import { User } from "proto/api_pb";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";

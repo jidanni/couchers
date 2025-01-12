@@ -1,5 +1,5 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { ReactChildren } from "react";
 import {
   getVapidPublicKey,

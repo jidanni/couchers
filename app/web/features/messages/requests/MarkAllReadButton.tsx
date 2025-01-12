@@ -5,7 +5,7 @@ import { DoneAllIcon } from "components/Icons";
 import Snackbar from "components/Snackbar";
 import { groupChatsListKey, hostRequestsListKey } from "features/queryKeys";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { MESSAGES } from "i18n/namespaces";
 import { useMutation, useQueryClient } from "react-query";
 import { service } from "service";

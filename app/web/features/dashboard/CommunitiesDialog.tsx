@@ -1,6 +1,6 @@
 import { Dialog, DialogContent, DialogTitle } from "components/Dialog";
 import CommunityBrowser from "features/dashboard/CommunityBrowser";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { DASHBOARD } from "i18n/namespaces";
 
 export default function CommunitiesDialog({

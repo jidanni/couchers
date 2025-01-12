@@ -1,3 +1,5 @@
+'use client';
+
 import type {} from "@mui/lab/themeAugmentation";
 import { createTheme, Theme } from "@mui/material";
 import { ThemeOptions } from "@mui/material/styles";

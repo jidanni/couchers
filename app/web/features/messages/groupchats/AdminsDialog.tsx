@@ -23,7 +23,7 @@ import {
 import { useLiteUsers } from "features/userQueries/useLiteUsers";
 import { Empty } from "google-protobuf/google/protobuf/empty_pb";
 import { RpcError } from "grpc-web";
-import { useTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import { GLOBAL, MESSAGES } from "i18n/namespaces";
 import { LiteUser } from "proto/api_pb";
 import { GroupChat } from "proto/conversations_pb";
