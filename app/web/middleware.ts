@@ -7,10 +7,14 @@ interface CustomRequestCookies {
 export function middleware(
   req: NextRequest & { cookies: CustomRequestCookies }
 ) {
-  if (req.cookies["couchers-sesh"] && req.nextUrl.pathname === "/") {
+  const { pathname } = req.nextUrl;
+
+  // Handle session redirection for "/" to "/dashboard"
+  if (req.cookies.get("couchers-sesh") && pathname === "/") {
     const url = req.nextUrl.clone();
-    url.pathname = "/dashboard";
+    url.pathname = `/dashboard`;
     return NextResponse.rewrite(url);
   }
+
   return NextResponse.next();
 }

@@ -37,6 +37,7 @@
     "@sentry/react": "^8.47.0",
     "@stripe/stripe-js": "^5.4.0",
     "@toast-ui/editor": "^3.2.2",
+    "accept-language": "^3.0.20",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.13",
     "frontmatter-markdown-loader": "^3.7.0",

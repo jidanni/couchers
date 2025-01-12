@@ -4,6 +4,7 @@ import { Providers } from "./providers";
 import Metadata from "next";
 import Viewport from "next";
 import AppRoute from "components/AppRoute";
+import { allLanguages } from "i18n/allLanguages";
 
 export const viewport: Viewport = {
   themeColor: "#00a398",
@@ -17,15 +18,19 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
 };
 
+export async function generateStaticParams() {
+  return allLanguages.map((lng) => ({ lng }));
+}
+
 export default function RootLayout({
   children,
-  params,
+  params: { locale },
 }: {
   children: ReactNode;
   params: { locale?: string };
 }) {
   return (
-    <html lang={params.locale ?? "en"}>
+    <html lang={locale ?? "en"}>
       <head>
         <link
           rel="stylesheet"
